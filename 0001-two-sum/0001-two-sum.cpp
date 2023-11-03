@@ -16,34 +16,34 @@ public:
         
         // SOlution 2
         
-//         vector<int>result;
-//         for(auto it=nums.begin();it!=nums.end();++it){
+        vector<int>result;
+        for(auto it=nums.begin();it!=nums.end();++it){
 
-//             auto it2=find(it+1,nums.end(),target-*it);
-//             if(it2!=nums.end()){
-//                 result.push_back(it-nums.begin());
-//                 result.push_back(it2-nums.begin());
-//                 break;
-//             }
-//         }
-//         return result;
+            auto it2=find(it+1,nums.end(),target-*it);
+            if(it2!=nums.end()){
+                result.push_back(it-nums.begin());
+                result.push_back(it2-nums.begin());
+                break;
+            }
+        }
+        return result;
         
         // SOLUTION 3
-        vector<int>v;
-        int i=0;
+//         vector<int>v;
+//         int i=0;
   
-        for(int i=0;i<nums.size();i++){
+//         for(int i=0;i<nums.size();i++){
        
-        for(int j=i+1;j<nums.size();j++){
-            if(nums[j]==target-nums[i]){
-                v.push_back(i);
-                v.push_back(j);
-            }
+//         for(int j=i+1;j<nums.size();j++){
+//             if(nums[j]==target-nums[i]){
+//                 v.push_back(i);
+//                 v.push_back(j);
+//             }
          
-        }
-        }
+//         }
+//         }
         
         
-        return v;
+//         return v;
     }
 };
